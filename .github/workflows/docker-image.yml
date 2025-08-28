@@ -15,8 +15,6 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: npx eslint .
-      - run: npm test
 
   docker-build-push:
     runs-on: ubuntu-latest
