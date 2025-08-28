@@ -1,0 +1,45 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "app-monitoring",
+    "title": "App Monitoring",
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "CPU Usage",
+        "targets": [
+          {
+            "expr": "rate(container_cpu_usage_seconds_total[1m])",
+            "legendFormat": "{{container}}"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 0, "w": 12, "h": 6 }
+      },
+      {
+        "type": "graph",
+        "title": "Memory Usage",
+        "targets": [
+          {
+            "expr": "container_memory_usage_bytes",
+            "legendFormat": "{{container}}"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 6, "w": 12, "h": 6 }
+      },
+      {
+        "type": "graph",
+        "title": "HTTP Response Time",
+        "targets": [
+          {
+            "expr": "http_request_duration_seconds_sum / http_request_duration_seconds_count",
+            "legendFormat": "{{handler}}"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 12, "w": 12, "h": 6 }
+      }
+    ],
+    "schemaVersion": 16,
+    "version": 1
+  }
+}
