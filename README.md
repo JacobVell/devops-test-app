@@ -15,13 +15,11 @@ git clone https://github.com/JacobVell/devops-test-app.git && cd devops-test-app
 ```bash
 docker-compose up -d
 ```
-3. Доступ к приложениям
-Сервис	URL	Username	Password
-Приложение	http://localhost:8888
-	—	—
-Grafana	http://localhost:3001
-	admin	admin
-Prometheus	http://localhost:9090
-	—	—
-cAdvisor	http://localhost:8080
-	—	—
+### 3. Доступ к приложениям
+
+| Сервис      | URL                         | Username | Password |
+|------------|-----------------------------|----------|----------|
+| Приложение | [http://localhost:8888](http://localhost:8888) | —        | —        |
+| Grafana    | [http://localhost:3001](http://localhost:3001) | admin    | admin    |
+| Prometheus | [http://localhost:9090](http://localhost:9090) | —        | —        |
+| cAdvisor   | [http://localhost:8080](http://localhost:8080) | —        | —        |
