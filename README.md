@@ -1,25 +1,25 @@
 # 🚀 DevOps Test Assignment: Sample App Deployment
 
-Этот проект демонстрирует полный **DevOps-процесс** — от контейнеризации до CI/CD и мониторинга.  
-Он показывает, как современные инструменты, такие как **Docker, Docker Compose, GitHub Actions, Prometheus и Grafana**, помогают автоматизировать разработку и деплой приложений.
+This project demonstrates a complete **DevOps workflow** — from containerization to CI/CD and monitoring.  
+It shows how modern tools like **Docker, Docker Compose, GitHub Actions, Prometheus, and Grafana** help automate application development and deployment.
 
 ---
 
-## 📋 Быстрый старт (Run Locally)
+## 📋 Quick Start (Run Locally)
 
-### 1. Клонируем репозиторий
+### 1. Clone the repository
 ```bash
 git clone https://github.com/JacobVell/devops-test-app.git && cd devops-test-app
 ```
-### 2. Запускаем все сервисы через Docker Compose
+### 2. Start all services with Docker Compose
 ```bash
-docker-compose up -d
+sudo docker-compose up -d
 ```
-### 3. Доступ к приложениям
+### 3. Access the applications
 
-| Сервис      | URL                         | Username | Password |
+| Service    | URL                         | Username | Password |
 |------------|-----------------------------|----------|----------|
-| Приложение | [http://localhost:8888](http://localhost:8888) | —        | —        |
+| App           | [http://localhost:8888](http://localhost:8888) | —        | —        |
 | Grafana    | [http://localhost:3001](http://localhost:3001) | admin    | admin    |
 | Prometheus | [http://localhost:9090](http://localhost:9090) | —        | —        |
 | cAdvisor   | [http://localhost:8080](http://localhost:8080) | —        | —        |
